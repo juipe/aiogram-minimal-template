@@ -1,4 +1,4 @@
-from aiogram import Router
+from aiogram import Router, F
 from aiogram.filters import Command
 from aiogram.types import Message
 import logging
@@ -27,5 +27,10 @@ async def command_start_handler(message: Message):
 
 #Help handler
 @user_router.message(Command("help"))
+async def command_help_handler(message: Message):
+    await message.answer("/start - start message\n/help - help message")
+
+#Help handler with text
+@user_router.message(F.text == "Help")
 async def command_help_handler(message: Message):
     await message.answer("/start - start message\n/help - help message")

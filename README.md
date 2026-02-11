@@ -1,17 +1,17 @@
-# 🤖 Aiogram Bot Template
+# Aiogram Bot Template
 
 A clean and minimal template for building Telegram bots with **aiogram 3.x** and **SQLite** database.
 
-## ✨ Features
+## Features
 
-- 🚀 Built with **aiogram 3.x** (latest async framework)
-- 💾 **SQLite** database with async support (aiosqlite)
-- 👤 User registration system
-- 🔐 Admin commands with access control
-- 📝 Clean project structure
-- ⚡ Easy to customize and extend
+- Built with **aiogram 3.x** (latest async framework)
+- **SQLite** database with async support (aiosqlite)
+- User registration system
+- Admin commands with access control
+- Clean project structure
+- Easy to customize and extend
 
-## 📁 Project Structure
+## Project Structure
 ```
 bot_template/
 ├── data/
@@ -26,7 +26,7 @@ bot_template/
 └── README.md               # This file
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Clone the repository
 ```bash
@@ -54,7 +54,7 @@ ADMIN_ID=123456789
 python bot.py
 ```
 
-## 📋 Available Commands
+## Available Commands
 
 ### User Commands
 - `/start` - Start the bot and register user
@@ -63,7 +63,7 @@ python bot.py
 ### Admin Commands
 - `/users` - Get total users count (admin only)
 
-## 🛠️ Customization
+## Customization
 
 ### Adding new user commands
 Edit `handlers/user_handlers.py`:
@@ -94,13 +94,13 @@ CREATE TABLE IF NOT EXISTS bot_users (
 """
 ```
 
-## 📦 Dependencies
+## Dependencies
 
 - **aiogram** (3.25.0) - Telegram Bot API framework
 - **aiosqlite** (0.22.1) - Async SQLite database
 - **python-dotenv** (1.2.1) - Environment variables management
 
-## 🗄️ Database
+## Database
 
 The bot uses SQLite database (`data/bot_users.db`) with the following schema:
 
@@ -108,20 +108,12 @@ The bot uses SQLite database (`data/bot_users.db`) with the following schema:
 - `userid` (INTEGER PRIMARY KEY) - Telegram user ID
 - `username` (TEXT) - Telegram username
 
-## 🔒 Security Notes
+## Security Notes
 
-- ⚠️ Never commit your `.env` file to version control
-- ⚠️ Keep your `BOT_TOKEN` secret
-- ⚠️ Make sure to add `.env` and `data/*.db` to `.gitignore`
+- Never commit your `.env` file to version control
+- Keep your `BOT_TOKEN` secret
+- Make sure to add `.env` and `data/*.db` to `.gitignore`
 
-## 📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 🤝 Contributing
+## Contributing
 
 Feel free to fork this project and customize it for your needs!
-
-## 💬 Support
-
-If you have questions or need help, feel free to open an issue.
