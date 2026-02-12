@@ -19,6 +19,8 @@ bot_template/
 ├── handlers/
 │   ├── user_handlers.py     # User command handlers
 │   └── admin_handlers.py    # Admin command handlers
+├── keyboards/
+│   └── main_keyboard.py     # Main keyboard
 ├── bot.py                   # Main bot file
 ├── config.py                # Configuration & environment variables
 ├── .env                     # Environment variables (create this)

@@ -7,7 +7,7 @@ data/*.db
 .vscode/
 .idea/
 
-#log
+#logs
 *.log
 
 #temp
